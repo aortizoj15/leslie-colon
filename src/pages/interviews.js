@@ -38,6 +38,7 @@ const allInterviews = {
     show: "The Big Show After Show",
     message:
       "Lola arrives in Florida to move in with her dad the Big Show but her arrival is not what she expected",
+    name: "Lily Brooks",
     video_url: "https://youtu.be/61N2qB72W48",
   },
   julia_lester: {

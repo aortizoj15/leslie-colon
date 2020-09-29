@@ -7,7 +7,6 @@ import { graphql } from "gatsby"
 import Head from "../components/Head"
 import Layout from "../components/Layout"
 import Card from "react-bootstrap/Card"
-import Button from "react-bootstrap/Button"
 import "../../scss/interviews.scss"
 
 export const query = graphql`
@@ -77,9 +76,7 @@ const Interviews = ({ data }) => {
               <Card.Body>
                 <Card.Title>{allInterviews[img.node.name].name}</Card.Title>
                 <Card.Text>{allInterviews[img.node.name].message}</Card.Text>
-                <Button variant="light" className="watch-now-btn">
-                  <a src={allInterviews[img.node.name].video_url}>Watch Now</a>
-                </Button>
+                <a className="watch-now-btn btn" href={allInterviews[img.node.name].video_url}>Watch Now</a>
               </Card.Body>
             </Col>
             <Col xs="12" md="6" className="p-0">

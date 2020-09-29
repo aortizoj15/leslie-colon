@@ -33,11 +33,6 @@ const Navigation = props => (
           </Nav.Link>
           <Nav.Link as="li">
             <Link className="nav-link" to="/">
-              Resume
-            </Link>
-          </Nav.Link>
-          <Nav.Link as="li">
-            <Link className="nav-link" to="/">
               Contact
             </Link>
           </Nav.Link>

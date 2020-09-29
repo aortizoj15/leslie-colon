@@ -4,7 +4,6 @@ import Head from "../components/Head"
 import Layout from "../components/Layout"
 import CardDeck from "react-bootstrap/CardDeck"
 import Card from "react-bootstrap/Card"
-import Button from "react-bootstrap/Button"
 import "../../scss/articles.scss"
 
 const allArticles = [
@@ -37,11 +36,11 @@ const allArticles = [
 const Articles = () => {
   const articleCards = allArticles.map(article => {
     return (
-      <Card className="card-element col-lg-12" key={article.id}>
+      <Card className="card-element col-md-12" key={article.id}>
         <Card.Body>
           <Card.Title>{article.title}</Card.Title>
           <Card.Text>{article.text}</Card.Text>
-          <Button variant="light" className="read-now-btn"><a href={article.url}>Read Now</a></Button>
+          <a className="read-now-btn btn" href={article.url}>Read Now</a>
         </Card.Body>
       </Card>
     )

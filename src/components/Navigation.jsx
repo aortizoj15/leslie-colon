@@ -1,8 +1,8 @@
-import React from "react"
-import Nav from "react-bootstrap/Nav"
-import Navbar from "react-bootstrap/Navbar"
-import { Link } from "gatsby"
-import "../../scss/navigation.scss"
+import React from 'react'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+import { Link } from 'gatsby'
+import '../../scss/navigation.scss'
 
 const Navigation = props => (
   <>
@@ -32,7 +32,7 @@ const Navigation = props => (
             </Link>
           </Nav.Link>
           <Nav.Link as="li">
-            <Link className="nav-link" to="/">
+            <Link className="nav-link" to="/contact">
               Contact
             </Link>
           </Nav.Link>

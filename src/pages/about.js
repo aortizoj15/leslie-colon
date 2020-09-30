@@ -26,7 +26,7 @@ const About = ({ data }) => (
       <Container>
         <h1>About</h1>
         <Row>
-          <Col sm="12" lg="6" className="d-flex justify-content-center my-auto">
+          <Col sm="12" lg="6" className="d-flex justify-content-center mb-3">
             <div className="w-100 h-100">
               <Img
                 fluid={data.file.childImageSharp.fluid}
@@ -34,7 +34,7 @@ const About = ({ data }) => (
               />
             </div>
           </Col>
-          <Col className="my-auto">
+          <Col>
             <p>
               My name is Leslie Colon and I am from San Marcos, CA: A small city
               in the county of San Diego. I recently completed my Bachelor of
@@ -72,10 +72,10 @@ const About = ({ data }) => (
               Currently, I am looking for a full-time position within the
               Entertainment and Media industry. Meanwhile, I am still working as
               an intern for companies helping with Social Media, Marketing, and
-              take any projects to gain experience. I have also branched out on
-              my own and launched my own Youtube channel, Café con Leslie. So
-              make sure you check out my channel and enjoy my conversations over
-              a cup of Coffee!
+              take on any projects to gain and expand my experience. I have also
+              branched out on my own and launched my Youtube channel, Café con
+              Leslie. So make sure you check out my channel and enjoy my
+              conversations over a cup of Coffee!
             </p>
           </Col>
         </Row>

@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import { Link } from 'gatsby'
 import '../../scss/navigation.scss'
 
-const Navigation = props => (
+const Navigation = () => (
   <>
     <Navbar className="navbar-container" expand="md" sticky="top">
       <Navbar.Brand>Leslie Colon</Navbar.Brand>
@@ -24,6 +24,11 @@ const Navigation = props => (
           <Nav.Link as="li">
             <Link className="nav-link" to="/interviews">
               Interviews
+            </Link>
+          </Nav.Link>
+          <Nav.Link as="li">
+            <Link className="nav-link" to="/on-air">
+              On-Air
             </Link>
           </Nav.Link>
           <Nav.Link as="li">

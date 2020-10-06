@@ -46,13 +46,15 @@ const allArticles = [
 const articleCards = allArticles.map(article => (
   <Col className="card-column col-12 col-md-6 col-lg-3 mb-3" key={article.id}>
     <Card className="card-element text-center h-100">
+      <Card.Header>{article.title}</Card.Header>
       <Card.Body>
-        <Card.Title>{article.title}</Card.Title>
         <Card.Text>{article.text}</Card.Text>
+      </Card.Body>
+      <Card.Footer>
         <a className="read-now-btn btn" href={article.url}>
           Read Now
         </a>
-      </Card.Body>
+      </Card.Footer>
     </Card>
   </Col>
 ))

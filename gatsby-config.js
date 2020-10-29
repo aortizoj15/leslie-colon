@@ -1,7 +1,11 @@
 /**
  * Configure your Gatsby site with this file.
  *
+<<<<<<< HEAD
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
+=======
+ * See: https://www.gatsbyjs.org/docs/gatsby-config/
+>>>>>>> 4b0868f35b9b9658a4d05113308fa73de8d25095
  */
 
 module.exports = {

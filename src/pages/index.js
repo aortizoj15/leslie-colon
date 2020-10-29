@@ -21,7 +21,6 @@ const Home = () => (
           </Col>
         </Row>
 
-        
         <Row className="mb-5">
           <Col>
             <h2>Check out my guest appearance on Wassup Flobo? After Hours!</h2>
@@ -31,6 +30,7 @@ const Home = () => (
             />
           </Col>
         </Row>
+
         <Row>
           <Col>
             <h2>Check out my guest appearance on the Knew Amsterdam Radio</h2>

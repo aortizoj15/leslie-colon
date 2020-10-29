@@ -29,5 +29,13 @@ module.exports = {
         path: `${__dirname}/src/img/`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Barlow Condensed']
+        }
+      }
+    }
   ],
 }

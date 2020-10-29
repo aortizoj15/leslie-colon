@@ -1,19 +1,41 @@
 import React from 'react'
+import Img from 'gatsby-image'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import {graphql} from 'gatsby'
 import ListGroup from 'react-bootstrap/ListGroup'
 import Layout from '../components/Layout'
 import Head from '../components/Head'
 import '../../scss/contact.scss'
 
-const Contact = () => (
+export const query = graphql`
+  query {
+    file(relativePath: {regex: "/standing/"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+const Contact = ({data}) => (
   <Layout>
     <>
       <Head title="Contact" />
       <Container>
         <h1>Contact</h1>
         <Row>
+          <Col sm="12" lg="6" className="d-flex justify-content-center mb-3">
+            <div className="w-100 h-100">
+              <Img
+                fluid={data.file.childImageSharp.fluid}
+                alt="Leslie Colon Nature Standing"
+              />
+            </div>
+          </Col>
           <Col>
             <ListGroup>
               <ListGroup.Item

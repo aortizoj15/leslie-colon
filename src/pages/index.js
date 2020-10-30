@@ -38,7 +38,7 @@ const Home = ({data}) => {
     <>
       <Head title="Home" />
       <Container>
-        <Row className="mb-5">
+        <Row className="my-5">
           {imageColumns}
         </Row>
 

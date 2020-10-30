@@ -21,9 +21,7 @@ const Layout = props => {
         <Col>{children}</Col>
       </Row>
       <Row>
-        <Col>
           <Footer>Created by Alexis Ortiz Ojeda</Footer>
-        </Col>
       </Row>
     </Container>
   )

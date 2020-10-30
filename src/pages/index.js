@@ -26,15 +26,13 @@ export const query = graphql`
 `
 const Home = ({data}) => {
   const files = data.allFile.edges
-  console.log("Files are: ", files)
   const homeImages = files.filter(file => file.node.name.includes('home'))
   const imageColumns = homeImages.map(img => {
     return (
-      <Col className="my-auto"><Img fluid={img.node.childImageSharp.fluid}/></Col>
+      <Col key={img.node.name} className="my-auto"><Img fluid={img.node.childImageSharp.fluid}/></Col>
     )
   })
 
-  console.log(homeImages, "Files are this$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
   return (
   <Layout>
     <>

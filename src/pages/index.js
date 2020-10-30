@@ -5,12 +5,45 @@ import Col from 'react-bootstrap/Col'
 import Layout from '../components/Layout'
 import Head from '../components/Head'
 import Video from '../components/Video'
+import {graphql} from 'gatsby'
+import Img from 'gatsby-image'
 
-const Home = () => (
+export const query = graphql`
+  query {
+    allFile {
+      edges {
+        node {
+          childImageSharp {
+            fluid(quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          name
+        }
+      }
+    }
+  }
+`
+const Home = ({data}) => {
+  const files = data.allFile.edges
+  console.log("Files are: ", files)
+  const homeImages = files.filter(file => file.node.name.includes('home'))
+  const imageColumns = homeImages.map(img => {
+    return (
+      <Col className="my-auto"><Img fluid={img.node.childImageSharp.fluid}/></Col>
+    )
+  })
+
+  console.log(homeImages, "Files are this$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+  return (
   <Layout>
     <>
       <Head title="Home" />
       <Container>
+        <Row className="mb-5">
+          {imageColumns}
+        </Row>
+
         <Row className="mb-5">
           <Col>
             <h2>Check out the most recent episode of Café con Leslie</h2>
@@ -50,5 +83,6 @@ const Home = () => (
       </Container>
     </>
   </Layout>
-)
+)}
+
 export default Home

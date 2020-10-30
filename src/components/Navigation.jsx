@@ -6,7 +6,7 @@ import '../../scss/navigation.scss'
 
 const Navigation = () => (
   <>
-    <Navbar className="navbar-container" expand="md" fixed="top">
+    <Navbar className="navbar-container" expand="md" sticky="top">
       <Navbar.Brand>Leslie Colon</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

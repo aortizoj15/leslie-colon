@@ -1,0 +1,13 @@
+// Tablet
+@media (max-width: 768px) {
+  .responsive {
+    font-size: 1.5em;
+  }
+}
+
+// Mobile
+@media (max-width: 425px) {
+  .responsive {
+    font-size: 1.2em;
+  }
+}

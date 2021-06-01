@@ -12,32 +12,32 @@ const Navigation = () => (
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav as="ul">
           <Nav.Link as="li">
-            <Link className="nav-link" to="/">
+            <Link className="nav-link" activeClassName="nav-link-active" to="/">
               Home
             </Link>
           </Nav.Link>
           <Nav.Link as="li">
-            <Link className="nav-link" to="/about">
+            <Link className="nav-link" activeClassName="nav-link-active" to="/about">
               About
             </Link>
           </Nav.Link>
           <Nav.Link as="li">
-            <Link className="nav-link" to="/interviews">
+            <Link className="nav-link" activeClassName="nav-link-active" to="/interviews">
               Interviews
             </Link>
           </Nav.Link>
           <Nav.Link as="li">
-            <Link className="nav-link" to="/on-air">
+            <Link className="nav-link" activeClassName="nav-link-active" to="/on-air">
               On-Air
             </Link>
           </Nav.Link>
           <Nav.Link as="li">
-            <Link className="nav-link" to="/articles">
+            <Link className="nav-link" activeClassName="nav-link-active" to="/articles">
               Articles
             </Link>
           </Nav.Link>
           <Nav.Link as="li">
-            <Link className="nav-link" to="/contact">
+            <Link className="nav-link" activeClassName="nav-link-active" to="/contact">
               Contact
             </Link>
           </Nav.Link>

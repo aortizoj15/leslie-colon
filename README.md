@@ -1,4 +1,4 @@
-This repository contains the source code for [Leslie Colon](https://leslie-colon.netlify.app/).
+This repository contains the source code for [Leslie Colon](https://thelesliecolon.com/).
 
 Built using technologies including:
 

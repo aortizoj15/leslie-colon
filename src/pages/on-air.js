@@ -106,7 +106,7 @@ const OnAir = ({ data }) => {
   const imageCards = onAirImages.map(image => {
     const videoList = onAirData[image.node.name].videos
     const videoListItem = videoList.map(video => (
-      <ListGroup.Item className="text-center list-item">
+      <ListGroup.Item className="text-center">
         <h6>{video.title}</h6>
         <a className="btn watch-btn" href={video.url}>
           Watch

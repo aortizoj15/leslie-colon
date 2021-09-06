@@ -108,8 +108,8 @@ const OnAir = ({ data }) => {
     const videoListItem = videoList.map(video => (
       <ListGroup.Item className="text-center">
         <h6>{video.title}</h6>
-        <a className="btn watch-btn" href={video.url}>
-          Watch
+        <a className="btn watch-now-btn" href={video.url}>
+          Watch Now
         </a>
       </ListGroup.Item>
     ))
